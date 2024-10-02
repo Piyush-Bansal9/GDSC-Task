@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 10px;
+    width: 70%;
+    max-width: 1200px;
+    height:80%;
+}
+
+.box {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5em;
+    color: white;
+}
+
+.red {
+    background-color: red;
+    color: black;
+    grid-row : 1/ 9;
+    grid-column: 1/5;
+    border-radius: 20px 0 0 0;
+}
+
+.peach {
+    background-color: #fce5cd;
+    color: black;
+    grid-row: 1 / 4; 
+    grid-column: 5 / 10;
+}
+
+.purple {
+    background-color: #d1c4f1;
+    color: black;
+    grid-row: 1 / 9;
+    grid-column: 10 / 14;
+    border-radius: 0 20px 0 0;
+}
+
+.black {
+    background-color: black;
+    grid-row: 4 / 9;
+    grid-column: 5/ 10;
+}
+
+.green {
+    background-color: #90ee90;
+    grid-row: 9 / 13;
+    grid-column: 1 / 9;
+    color: black;
+    border-radius: 0 0 0 20px;
+}
+
+.peach-2 {
+    background-color: #fce5cd;
+    color: black;
+    grid-row: 9 / 13;
+    grid-column: 9 / 14;
+    border-radius: 0 0 20px 0;
+}
+
+.text {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 35px;
+}
+
+
+.name {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+}
